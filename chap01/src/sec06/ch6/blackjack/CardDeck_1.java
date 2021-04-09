@@ -12,7 +12,7 @@ public class CardDeck_1 {
 		}
 		
 		private void init2() {
-			int idx = 0;
+			int idx = 0;//지역변수에는 public을 붙이는 의미가 없음 >> 생성자가 끝나면 사라지기 때문 / but final은 줄 수 있다.
 			for(String pattern : CARD_PATTERNS_1) {
 				for(String symbol : CARD_SYMBOLS) {
 					CARD_ARR[idx++] = new Card(pattern,symbol);
